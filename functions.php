@@ -236,7 +236,7 @@ can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
 function starter_fonts() {
-  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Lora:400,400i|Roboto:300,300i,400,400i,500,700,900');
+  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Raleway:300,400,400i,700|Open+Sans:400,700,800');
 }
 
 add_action('wp_enqueue_scripts', 'starter_fonts');
@@ -462,5 +462,28 @@ function my_theme_register_required_plugins() {
 
 }
 
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> true
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Header Settings',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+}
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

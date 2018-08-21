@@ -31,9 +31,24 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+	flex-direction: row;
+}
 
-	#logo {}
+	#logo {
+		text-align: left;
+		margin: 0;
+		margin-top: .5em;
+
+		img {
+			width: 100%;
+			max-width: 200px;
+		}
+	}
+
+	#inner-header {
+		align-items: center;
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -41,14 +56,31 @@ NAVIGATION STYLES
 
 .nav {
 	border: 0;
-	
+
+	&.top-nav {
+		justify-content: flex-end;
+	}
+
 
 	ul {
 		background:$black;
 		margin-top:0;
 	}
 	li {
+		background-color: rgba($secondary, 1);
+		transition: all .5s;
 
+		&:hover {
+			background-color: darken($secondary, 10%);
+		}
+
+		&:first-child {
+			border-radius: 5px 0 0 5px;
+		}
+
+		&:last-child {
+			border-radius: 0px 5px 5px 0px;
+		}
 
 		a {
 			border-bottom: 0;
@@ -59,7 +91,7 @@ NAVIGATION STYLES
 			*/
 			&:hover, &:focus {
 				color: $white;
-				text-decoration: underline;
+				text-decoration: none;
 			}
 		}
 

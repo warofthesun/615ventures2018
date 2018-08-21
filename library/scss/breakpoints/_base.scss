@@ -29,7 +29,11 @@ img {
 	image-rendering: auto;
 }
 
-#inner-header, #inner-footer {
+#inner-header {
+	flex-direction: row;
+}
+
+#inner-footer {
 	flex-direction: column;
 }
 
@@ -130,7 +134,8 @@ H1, H2, H3, H4, H5 STYLES
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: 700;
+	font-family: $display;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -174,11 +179,17 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $black;
+	//background-color: rgba($primary, 0.7);
 }
 
 	#logo {
 		margin: 0.75em 0;
+		text-align: center;
+
+		img {
+			width: 50%;
+			margin: 0 auto;
+		}
 
 		a {
 			color: $white;
@@ -202,6 +213,8 @@ and more scalable.
 	margin-bottom: 1em;
 	margin-top:-2em;
 	transition: all .5s;
+	margin-left: auto;
+	margin-right: auto;
 
 	&.show {
 		margin-top: 0em;
@@ -248,12 +261,17 @@ and more scalable.
 	li {
 	border-bottom: 1px solid white;
 	text-align: center;
+	
 
 		a {
 			display: block;
 			color: $white;
+			font-weight: 700;
+			text-transform: uppercase;
 			text-decoration: none;
 			padding: 0.75em;
+			font-family: $display;
+
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -313,6 +331,24 @@ and more scalable.
 
 } /* end .nav */
 
+/**********************
+GENERAL
+**********************/
+.hero {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+
+	&_content {
+		margin-top: 10%;
+
+		h1 {
+			color: $white;
+			font-weight: 100;
+			font-size: 3.5em;
+		}
+	}
+}
 
 /*********************
 POSTS & CONTENT STYLES

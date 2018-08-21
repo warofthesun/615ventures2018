@@ -1364,7 +1364,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .accent-btn, .comment-reply-link, #submit {
   display: inline-block;
   position: relative;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #fff;
   font-size: 0.9em;
@@ -1447,7 +1447,7 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f7f8fa;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
@@ -1708,7 +1708,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
@@ -1717,9 +1717,15 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 img {
-  image-rendering: -webkit-optimize-contrast; }
+  image-rendering: auto; }
 
-#inner-header, #inner-footer {
+#inner-header {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+#inner-footer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1787,12 +1793,12 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #2980b9;
+  color: #e04829;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #216693; }
+    color: #bf371c; }
   a:link, a:visited:link {
     /*
 		this highlights links on iPhones/iPads.
@@ -1806,7 +1812,8 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
-  font-weight: 500;
+  font-weight: 700;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -1840,11 +1847,12 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-.header {
-  background-color: #000; }
-
 #logo {
-  margin: 0.75em 0; }
+  margin: 0.75em 0;
+  text-align: center; }
+  #logo img {
+    width: 50%;
+    margin: 0 auto; }
   #logo a {
     color: #fff; }
 
@@ -1864,7 +1872,9 @@ and more scalable.
   margin-bottom: 1em;
   margin-top: -2em;
   -webkit-transition: all .5s;
-  transition: all .5s; }
+  transition: all .5s;
+  margin-left: auto;
+  margin-right: auto; }
   #mobile-nav.show {
     margin-top: 0em;
     padding: .5em;
@@ -1915,8 +1925,11 @@ and more scalable.
     .nav li a {
       display: block;
       color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
       text-decoration: none;
       padding: 0.75em;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
       /*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -1928,6 +1941,25 @@ and more scalable.
       padding-left: 30px; }
 
 /* end .nav */
+/**********************
+GENERAL
+**********************/
+.hero {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .hero_content {
+    margin-top: 10%; }
+    .hero_content h1 {
+      color: #fff;
+      font-weight: 100;
+      font-size: 3.5em; }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -2426,6 +2458,22 @@ LAYOUT & GRID STYLES
   /*********************
 HEADER STYLES
 *********************/
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  #logo {
+    text-align: left;
+    margin: 0;
+    margin-top: .5em; }
+    #logo img {
+      width: 100%;
+      max-width: 200px; }
+  #inner-header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   /*********************
 NAVIGATION STYLES
 *********************/
@@ -2434,14 +2482,27 @@ NAVIGATION STYLES
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
+    .nav.top-nav {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
     .nav ul {
       background: #000;
       margin-top: 0; }
     .nav li {
+      background-color: #e04829;
+      -webkit-transition: all .5s;
+      transition: all .5s;
       /*
 		plan your menus and drop-downs wisely.
 		*/
       /* showing sub-menus */ }
+      .nav li:hover {
+        background-color: #bb361b; }
+      .nav li:first-child {
+        border-radius: 5px 0 0 5px; }
+      .nav li:last-child {
+        border-radius: 0px 5px 5px 0px; }
       .nav li a {
         border-bottom: 0;
         /*
@@ -2450,7 +2511,7 @@ NAVIGATION STYLES
 			*/ }
         .nav li a:hover, .nav li a:focus {
           color: #fff;
-          text-decoration: underline; }
+          text-decoration: none; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
