@@ -240,6 +240,11 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
+.left {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
