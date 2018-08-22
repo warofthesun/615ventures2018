@@ -136,7 +136,7 @@ LAYOUT & GRID STYLES
 		}
 	}
 	h2 {
-		border-bottom: 1px solid $gray;
+		border-bottom: 1px solid $secondary;
 	}
 }
 
@@ -200,6 +200,7 @@ LAYOUT & GRID STYLES
 	width: 96%;
 	margin: 0 auto;
 }
+
 
 /*********************
 LINK STYLES
@@ -449,6 +450,8 @@ GENERAL
 			color: $white;
 			font-weight: 100;
 			font-size: 4.5em;
+			border-bottom: 1px solid $secondary;
+			padding-bottom: .5em;
 		}
 	}
 }

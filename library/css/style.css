@@ -1361,27 +1361,27 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.accent-btn, .comment-reply-link, #submit {
+.accent-btn, .comment-reply-link, #submit, a.primary-btn {
   display: inline-block;
   position: relative;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   font-size: 0.9em;
-  font-size: 34px;
+  text-transform: uppercase;
   line-height: 34px;
-  font-weight: normal;
+  font-weight: 700;
   padding: 0 24px;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .accent-btn:hover, .comment-reply-link:hover, #submit:hover, .accent-btn:focus, .comment-reply-link:focus, #submit:focus {
+  .accent-btn:hover, .comment-reply-link:hover, #submit:hover, a.primary-btn:hover, .accent-btn:focus, .comment-reply-link:focus, #submit:focus, a.primary-btn:focus {
     color: #fff;
     text-decoration: none;
     outline: none; }
-  .accent-btn:active, .comment-reply-link:active, #submit:active {
+  .accent-btn:active, .comment-reply-link:active, #submit:active, a.primary-btn:active {
     top: 1px; }
 
 /*
@@ -1395,6 +1395,13 @@ and it will create a button dependant on those variables.
     background-color: #292929; }
   .accent-btn:active, .comment-reply-link:active, #submit:active {
     background-color: #262626; }
+
+a.primary-btn {
+  background-color: #23337b; }
+  a.primary-btn:hover, a.primary-btn:focus {
+    background-color: #1e2c6b; }
+  a.primary-btn:active {
+    background-color: #1d2b67; }
 
 /******************************************************************
 Site Name:
@@ -1823,7 +1830,7 @@ LAYOUT & GRID STYLES
     margin-bottom: 1em; }
 
 .flexible_section h2 {
-  border-bottom: 1px solid #eaedf2; }
+  border-bottom: 1px solid #e04829; }
 
 .who-we-are img {
   width: 100%;
@@ -2043,7 +2050,9 @@ GENERAL
     .hero_content h1 {
       color: #fff;
       font-weight: 100;
-      font-size: 4.5em; }
+      font-size: 4.5em;
+      border-bottom: 1px solid #e04829;
+      padding-bottom: .5em; }
 
 /*********************
 POSTS & CONTENT STYLES

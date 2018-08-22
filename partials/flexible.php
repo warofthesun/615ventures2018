@@ -187,7 +187,7 @@ if( have_rows('front_page_content') ):
               ); ?>
               <ul class="row">
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                  <li class="col-xs-6" style="display:flex;">
+                  <li class="col-xs-12 col-sm-6" style="display:flex;">
                     <a href="<?php the_field('article_link'); ?>" target="_blank" class="row">
                     <div class="col-xs-3">
                       <?php the_post_thumbnail('medium-nocrop'); ?>
@@ -206,7 +206,7 @@ if( have_rows('front_page_content') ):
                   </li>
                 <?php endwhile; wp_reset_query(); ?>
               </ul>
-              <a href="/recognition">See All</a>
+              <a href="/recognition" class="primary-btn" style="float:right;margin-bottom:2em;">See All</a>
           </div>
         </article>
       <?php endif; ?>
