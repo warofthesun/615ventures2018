@@ -1,5 +1,6 @@
 <!--front-page-->
 <?php get_header(); ?>
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div class="hero_content wrap">
 		<h1><?php the_field('hero_text'); ?></h1>
@@ -16,8 +17,6 @@
 							<?php endwhile; endif; ?>
 
 						</main>
-
-
 
 				</div>
 

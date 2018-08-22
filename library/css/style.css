@@ -1778,6 +1778,74 @@ img {
       -ms-flex-order: 1;
           order: 1; }
 
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 990;
+  width: 100%;
+  display: none;
+  height: 100vh; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block !important; }
+
+.modal-wrapper {
+  z-index: 999;
+  position: absolute;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+#modal-content {
+  margin-top: 1em; }
+
+.modal-link {
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+div.wpcf7-response-output {
+  background-color: rgba(255, 255, 255, 0.9); }
+
+.wpcf7-form-control-wrap textarea {
+  padding-top: 1em; }
+
+.wpcf7 label {
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.modal {
+  display: none;
+  position: relative;
+  max-width: 500px;
+  min-width: 400px;
+  min-height: 300px;
+  padding: 20px 15px;
+  background: transparent;
+  color: #000000;
+  text-align: center; }
+  .modal a {
+    color: white !important; }
+  .modal p {
+    display: block !important;
+    border-bottom: 0px !important;
+    padding-bottom: .5em !important;
+    text-align: left;
+    color: white; }
+  .modal .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+    color: #e04829;
+    font-size: 2em; }
+  .modal h1 {
+    font-size: 56px;
+    margin: 35px 0; }
+  .modal .entry-content p {
+    font-size: 16px; }
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -1875,6 +1943,20 @@ LAYOUT & GRID STYLES
   .recognition a p {
     color: #5c6b80; }
 
+.partners {
+  background-color: #eaedf2;
+  margin-top: 2em;
+  padding: 1em; }
+  .partners h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 700; }
+  .partners img {
+    -webkit-filter: url(#grayscale);
+            filter: url(#grayscale);
+    max-height: 150px;
+    width: auto; }
+
 .wrap {
   width: 96%;
   margin: 0 auto; }
@@ -1966,23 +2048,26 @@ and more scalable.
   -webkit-transition: all .5s;
   transition: all .5s;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  color: #fff; }
   #mobile-nav.show {
     margin-top: 0em;
     padding: .5em;
-    background-color: white; }
+    background-color: white;
+    color: #23337b;
+    width: 100%; }
     #mobile-nav.show:after {
       content: "\f106";
       text-align: center;
       width: 100%;
       display: inline;
-      font-family: fontawesome; }
+      font-family: "Font Awesome 5 Free Solid"; }
   #mobile-nav:after {
     content: "\f107";
     text-align: center;
     width: 100%;
     display: inline;
-    font-family: fontawesome; }
+    font-family: "Font Awesome 5 Free Solid"; }
 
 .nav {
   border-bottom: 0;

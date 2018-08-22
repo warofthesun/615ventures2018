@@ -1,6 +1,25 @@
+<div class="partners">
+	<div class="wrap row" style="align-items: center;justify-content: space-around;">
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<h2><?php the_field('header', 'option'); ?></h2>
+			<?php if( have_rows('trusted_by_repeater', 'option') ): ?>
+				<?php while ( have_rows('trusted_by_repeater', 'option') ) : the_row(); ?>
+					<?php
+
+							$image = get_sub_field('organization_logo');
+							$size = 'medium-nocrop'; // (thumbnail, medium, large, full or custom size)
+
+							if( $image ) { echo wp_get_attachment_image( $image, $size ); }
+
+					?>
+				<?php endwhile; endif; ?>
+		<?php endwhile; endif; ?>
+	</div>
+</div>
+
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
-				<div id="inner-footer" class="wrap  row">
+				<div id="inner-footer" class="wrap row">
 
 					<nav role="navigation">
 						<?php wp_nav_menu(array(
@@ -29,7 +48,7 @@
 		<?php // all js scripts are loaded in library/starter.php ?>
 		<?php wp_footer(); ?>
 
-		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
 	</body>
 
