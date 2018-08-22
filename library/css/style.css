@@ -1815,10 +1815,58 @@ LAYOUT & GRID STYLES
 *********************/
 .flexible_section h1 {
   text-transform: uppercase;
-  letter-spacing: 0.2em; }
+  letter-spacing: 0.2em;
+  margin-top: 2em;
+  margin-bottom: 3em; }
+  .flexible_section h1.first {
+    margin-top: 1em;
+    margin-bottom: 1em; }
 
 .flexible_section h2 {
   border-bottom: 1px solid #eaedf2; }
+
+.who-we-are img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  -webkit-filter: url("#grayscale");
+          filter: url("#grayscale");
+  margin-left: -1em; }
+
+.philanthropy img {
+  width: auto;
+  height: 130px;
+  margin: auto; }
+
+.philanthropy h2 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #23337b; }
+
+.philanthropy li {
+  margin-bottom: 2em; }
+
+.recognition img {
+  width: 100%;
+  height: auto; }
+
+.recognition h2 {
+  font-size: 1.2em;
+  color: #23337b;
+  line-height: 1.6em;
+  margin-top: 0; }
+
+.recognition .byline {
+  font-style: normal;
+  font-weight: 700; }
+
+.recognition li {
+  margin-bottom: 2em; }
+
+.recognition a {
+  text-decoration: none; }
+  .recognition a p {
+    color: #5c6b80; }
 
 .wrap {
   width: 96%;
@@ -2361,7 +2409,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #000;
+  background-color: #23337b;
   color: #f8f9fa; }
 
 /*

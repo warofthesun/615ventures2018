@@ -37,7 +37,7 @@
 		<?php // end of wordpress head ?>
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 		<script>
-      window.sr = ScrollReveal({ duration: 600, reset: false, easing: 'ease-in', scale: .98, distance:'50px'});
+      window.sr = ScrollReveal({ duration: 600, reset: false, easing: 'ease-in', scale: .98, distance:'30px'});
     </script>
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
@@ -53,6 +53,37 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+		<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+			<defs>
+				<filter id="grayscale">
+				 <feColorMatrix result="base" in="SourceGraphic" type="matrix"
+					 values="0 1 0 0 0
+									 0 1 0 0 0
+									 0 1 0 0 0
+									 0      0      0      1 0"/>
+				 </feColorMatrix>
+				</filter>
+			</defs>
+		</svg>
+		<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+			<defs>
+				<filter id="bluescale">
+				 <feColorMatrix result="base" in="SourceGraphic" type="matrix"
+					 values="0.3333 0.3333 0.3333 0 0
+									 0.3333 0.3333 0.3333 0 0
+									 0.3333 0.3333 0.3333 0 0
+									 0      0      0      1 0"/>
+				 </feColorMatrix>
+				 <feColorMatrix color-interpolation-filters="sRGB" in="base" type="matrix"
+					 values="0.00588  0        0        0 0
+									 0      	0.61176  0        0 0
+									 0      	0        1  0 0
+									 0      	0        0        1 0 "/>
+					</feColorMatrix>
+
+				</filter>
+			</defs>
+		</svg>
 
 		<div id="container">
 			<div class="hero">

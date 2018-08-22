@@ -11,7 +11,7 @@
 
 						<main id="main" class="col-xs-12" role="main" itemscope itemprop="mainContentOfPage">
 
-							<?php include 'partials/front-page.php'; ?>
+							<?php include 'partials/flexible.php'; ?>
 
 							<?php endwhile; endif; ?>
 

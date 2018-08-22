@@ -68,6 +68,8 @@ if ( ! isset( $content_width ) ) {
 add_image_size( 'starter-thumb-600', 600, 150, true );
 add_image_size( 'starter-thumb-300', 300, 100, true );
 add_image_size( 'gallery-image', 680, 450, true );
+add_image_size( 'square', 450, 450, true );
+add_image_size( 'medium-nocrop', 450, false );
 
 /*
 to add more sizes, simply copy a line from above

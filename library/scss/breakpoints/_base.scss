@@ -127,9 +127,72 @@ LAYOUT & GRID STYLES
 	h1 {
 		text-transform: uppercase;
 		letter-spacing: 0.2em;
+		margin-top: 2em;
+		margin-bottom: 3em;
+
+		&.first {
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
 	}
 	h2 {
 		border-bottom: 1px solid $gray;
+	}
+}
+
+.who-we-are {
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		filter: url("#grayscale");
+		margin-left: -1em;
+	}
+}
+
+.philanthropy {
+	img {
+		width: auto;
+		height: 130px;
+		margin: auto;
+	}
+
+	h2 {
+		font-size: 1em;
+		font-weight: 700;
+		color: $primary;
+	}
+
+	li {margin-bottom: 2em;}
+}
+
+.recognition {
+	img {
+		width: 100%;
+		height: auto;
+	}
+	h2 {
+		font-size: 1.2em;
+		color: $primary;
+		line-height: 1.6em;
+		margin-top: 0;
+	}
+
+	.byline {
+		font-style: normal;
+		font-weight: 700;
+	}
+
+	li {
+		margin-bottom: 2em;
+	}
+
+	a {
+		text-decoration: none;
+
+		p {
+			color: $text-color;
+		}
 	}
 }
 
@@ -1051,7 +1114,7 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $black;
+	background-color: $primary;
 	color: $light-gray;
 }
 
