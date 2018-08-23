@@ -464,6 +464,8 @@ function my_theme_register_required_plugins() {
 
 }
 
+include 'partials/custom_fields.php';
+
 if( function_exists('acf_add_options_page') ) {
 
 	acf_add_options_page(array(
