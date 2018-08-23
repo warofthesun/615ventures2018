@@ -844,7 +844,7 @@ acf_add_local_field_group(array(
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
-				'width' => '',
+				'width' => '50',
 				'class' => '',
 				'id' => '',
 			),
@@ -853,6 +853,24 @@ acf_add_local_field_group(array(
 			'maxlength' => '',
 			'rows' => 4,
 			'new_lines' => 'br',
+		),
+		array(
+			'key' => 'field_5b7ee30500756',
+			'label' => 'Email',
+			'name' => 'email',
+			'type' => 'email',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '50',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
 		),
 	),
 	'location' => array(
@@ -873,5 +891,6 @@ acf_add_local_field_group(array(
 	'active' => 1,
 	'description' => '',
 ));
+
 
 endif;

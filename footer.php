@@ -10,10 +10,9 @@
 							$size = 'medium-nocrop'; // (thumbnail, medium, large, full or custom size)
 
 							if( $image ) { echo wp_get_attachment_image( $image, $size ); }
-
 					?>
 				<?php endwhile; endif; ?>
-		<?php endif; ?>
+
 	</div>
 </div>
 
@@ -36,11 +35,10 @@
 	    					'fallback_cb' => 'starter_footer_links_fallback'  // fallback function
 							)); ?>
 						</nav>
-						<?php the_field('address', 'option'); ?>
+						<?php the_field('address', 'option'); ?> <?php if(get_field('email', 'option')); ?>| <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
 						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 					</div>
 					<div class="col-xs-12 col-md-6 social">
-						<?php if (have_posts()) : the_post(); ?>
 							<?php if( have_rows('social_repeater', 'option') ): ?>
 	            <ul class="row">
 		            <?php while ( have_rows('social_repeater', 'option') ) : the_row(); ?>
