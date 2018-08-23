@@ -1,6 +1,6 @@
 <div class="partners">
 	<div class="wrap row" style="align-items: center;justify-content: space-around;">
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		<?php if(have_posts()) : the_post(); ?>
 			<h2><?php the_field('header', 'option'); ?></h2>
 			<?php if( have_rows('trusted_by_repeater', 'option') ): ?>
 				<?php while ( have_rows('trusted_by_repeater', 'option') ) : the_row(); ?>
@@ -13,7 +13,7 @@
 
 					?>
 				<?php endwhile; endif; ?>
-		<?php endwhile; endif; ?>
+		<?php endif; ?>
 	</div>
 </div>
 
@@ -40,7 +40,7 @@
 						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 					</div>
 					<div class="col-xs-12 col-md-6 social">
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+						<?php if (have_posts()) : the_post(); ?>
 							<?php if( have_rows('social_repeater', 'option') ): ?>
 	            <ul class="row">
 		            <?php while ( have_rows('social_repeater', 'option') ) : the_row(); ?>
@@ -50,7 +50,7 @@
 									</li>
 								<?php endwhile; endif; ?>
 							</ul>
-						<?php endwhile; endif; ?>
+						<?php endif; ?>
 					</div>
 				</div>
 
