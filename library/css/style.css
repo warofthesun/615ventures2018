@@ -1733,22 +1733,53 @@ img {
           flex-direction: row; }
 
 #inner-footer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1em 0; }
+  #inner-footer .nav {
+    opacity: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #inner-footer .nav li {
+      border-bottom: 0px; }
 
-#inner-footer .nav {
-  opacity: 1;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  #inner-footer .nav li {
-    border-bottom: 0px; }
+.social .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.social a, .social a:visited {
+  text-decoration: none;
+  background-color: #e04829;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: #23337b;
+  font-size: 1.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 .5em; }
+
+.social span {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important; }
 
 .slider img {
   border: 2px solid #fff;
@@ -2657,6 +2688,12 @@ HEADER STYLES
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  #inner-footer {
+    text-align: left; }
+  .social .row {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
   /*********************
 NAVIGATION STYLES
 *********************/

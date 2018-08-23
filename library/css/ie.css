@@ -273,6 +273,14 @@ HEADER STYLES
       -ms-flex-align: center;
           align-items: center; }
 
+#inner-footer {
+  text-align: left; }
+
+.social .row {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 /*********************
 NAVIGATION STYLES
 *********************/

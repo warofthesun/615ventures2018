@@ -34,10 +34,13 @@ img {
 }
 
 #inner-footer {
-	flex-direction: column;
+
 }
 
 #inner-footer {
+	align-items: center;
+	text-align: center;
+	padding: 1em 0;
 	.nav {
 		opacity: 1;
 		flex-direction: row;
@@ -47,6 +50,31 @@ img {
 		li {
 			border-bottom: 0px;
 		}
+	}
+}
+
+.social {
+	.row {
+		justify-content: center;
+	}
+	a, a:visited {
+		text-decoration: none;
+		background-color: $secondary;
+		border-radius: 50%;
+		height: 40px;
+		width: 40px;
+		color: $primary;
+		font-size: 1.3em;
+		display: flex;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		margin: 0 .5em;
+	}
+	span {
+		position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
 	}
 }
 

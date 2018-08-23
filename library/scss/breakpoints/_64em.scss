@@ -54,6 +54,15 @@ HEADER STYLES
 		align-items: center;
 	}
 
+	#inner-footer {
+		text-align: left;
+	}
+	
+.social {
+	.row {
+		justify-content: flex-end;
+	}
+}
 /*********************
 NAVIGATION STYLES
 *********************/
