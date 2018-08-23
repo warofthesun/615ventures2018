@@ -464,6 +464,9 @@ and more scalable.
 	margin-left: auto;
 	margin-right: auto;
 	color: $white;
+	background-color: $secondary;
+	width: 218px;
+	padding: .3em;
 
 	&.show {
 		margin-top: 0em;
