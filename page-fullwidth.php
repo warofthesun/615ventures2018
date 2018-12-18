@@ -1,9 +1,9 @@
 <?php
 /*
- Template Name: Custom Page Example
+ Template Name: Full Width
 */
 ?>
-<!--page-custom-->
+<!--page-full width-->
 <?php get_header(); ?>
 
 			<div id="content">
