@@ -271,7 +271,7 @@ LAYOUT & GRID STYLES
 		width: 100%;
 		height: auto;
 		border-radius: 50%;
-		filter: url("#grayscale");
+		//filter: url("#grayscale");
 		margin-left: -1em;
 	}
 }
@@ -334,7 +334,7 @@ LAYOUT & GRID STYLES
 	}
 
 	img {
-		filter: url(#grayscale);
+		filter: url("#grayscale");
 		max-height: 150px;
 		width: auto;
 	}

@@ -54,7 +54,7 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-		<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+		<svg xmlns="http://www.w3.org/2000/svg" style="display:block;width:0;height:0;">
 			<defs>
 				<filter id="grayscale">
 				 <feColorMatrix result="base" in="SourceGraphic" type="matrix"
@@ -66,7 +66,7 @@
 				</filter>
 			</defs>
 		</svg>
-		<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+		<svg xmlns="http://www.w3.org/2000/svg" style="display:block;width:0;height:0;">
 			<defs>
 				<filter id="bluescale">
 				 <feColorMatrix result="base" in="SourceGraphic" type="matrix"

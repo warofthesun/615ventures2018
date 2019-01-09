@@ -104,7 +104,7 @@ if( have_rows('front_page_content') ):
             <?php while ( have_rows('team_member_repeater') ) : the_row(); ?>
               <li class="col-xs-12 col-md-6">
                 <div class="col-xs-12" style="display:flex;flex-direction:row;">
-                  <div class="col-xs-4">
+                  <div class="col-xs-4" style="filter: url(#grayscale);">
                     <?php
 
                         $image = get_sub_field('image');

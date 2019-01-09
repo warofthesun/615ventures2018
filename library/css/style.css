@@ -1858,7 +1858,7 @@ div.wpcf7-response-output {
   min-width: 400px;
   min-height: 300px;
   padding: 20px 15px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   color: #000000;
   text-align: center; }
   .modal a {
@@ -1940,8 +1940,6 @@ LAYOUT & GRID STYLES
   width: 100%;
   height: auto;
   border-radius: 50%;
-  -webkit-filter: url("#grayscale");
-          filter: url("#grayscale");
   margin-left: -1em; }
 
 .philanthropy img {
@@ -1988,8 +1986,8 @@ LAYOUT & GRID STYLES
     font-size: 1.2em;
     font-weight: 700; }
   .partners img {
-    -webkit-filter: url(#grayscale);
-            filter: url(#grayscale);
+    -webkit-filter: url("#grayscale");
+            filter: url("#grayscale");
     max-height: 150px;
     width: auto; }
 
