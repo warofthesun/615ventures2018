@@ -1361,7 +1361,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.accent-btn, .comment-reply-link, #submit, a.primary-btn {
+.accent-btn, .comment-reply-link, #submit, a.primary-btn, input[type="submit"] {
   display: inline-block;
   position: relative;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1377,11 +1377,11 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   cursor: pointer;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .accent-btn:hover, .comment-reply-link:hover, #submit:hover, a.primary-btn:hover, .accent-btn:focus, .comment-reply-link:focus, #submit:focus, a.primary-btn:focus {
+  .accent-btn:hover, .comment-reply-link:hover, #submit:hover, a.primary-btn:hover, input:hover[type="submit"], .accent-btn:focus, .comment-reply-link:focus, #submit:focus, a.primary-btn:focus, input:focus[type="submit"] {
     color: #fff;
     text-decoration: none;
     outline: none; }
-  .accent-btn:active, .comment-reply-link:active, #submit:active, a.primary-btn:active {
+  .accent-btn:active, .comment-reply-link:active, #submit:active, a.primary-btn:active, input:active[type="submit"] {
     top: 1px; }
 
 /*
@@ -1396,11 +1396,11 @@ and it will create a button dependant on those variables.
   .accent-btn:active, .comment-reply-link:active, #submit:active {
     background-color: #262626; }
 
-a.primary-btn {
+a.primary-btn, input[type="submit"] {
   background-color: #23337b; }
-  a.primary-btn:hover, a.primary-btn:focus {
+  a.primary-btn:hover, a.primary-btn:focus, input[type="submit"]:hover, input[type="submit"]:focus {
     background-color: #1e2c6b; }
-  a.primary-btn:active {
+  a.primary-btn:active, input[type="submit"]:active {
     background-color: #1d2b67; }
 
 /******************************************************************
@@ -1453,7 +1453,6 @@ textarea,
           box-shadow: none;
   border: 0;
   width: 100%;
-  max-width: 400px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f7f8fa;
   -webkit-transition: background-color 0.24s ease-in-out;
@@ -2185,8 +2184,7 @@ POSTS & CONTENT STYLES
 .hentry {
   background-color: #fff;
   border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #ccc; }
+  margin-bottom: 1.5em; }
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
     padding: 1.5em; }
