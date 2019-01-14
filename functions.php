@@ -169,6 +169,7 @@ function scrollmagic_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'scrollmagic_scripts' );
 
+include 'partials/acf-fields.php';
 
 if( function_exists('acf_add_options_page') ) {
 
