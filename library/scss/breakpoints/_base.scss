@@ -436,6 +436,12 @@ HEADER STYLES
 
 		img {
 			width: 50%;
+
+			@media only screen and (max-width: 48em) {
+				width: 200px;
+				height: auto;
+			}
+
 			margin: 0 auto;
 		}
 
@@ -465,7 +471,7 @@ and more scalable.
 	margin-right: auto;
 	color: $white;
 	background-color: $secondary;
-	width: 218px;
+	width: 200px;
 	padding: .3em;
 
 	&.show {
@@ -480,8 +486,8 @@ and more scalable.
 			text-align: center;
 			width: 100%;
 			display: inline;
-			font-family: "Font Awesome 5 Free Solid";
-
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
 		}
 	}
 
@@ -490,7 +496,8 @@ and more scalable.
 		text-align: center;
 		width: 100%;
 		display: inline;
-		font-family: "Font Awesome 5 Free Solid";
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
 
 	}
 

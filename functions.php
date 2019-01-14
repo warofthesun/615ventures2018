@@ -140,7 +140,7 @@ function starter_comments( $comment, $args, $depth ) {
 
 
 function starter_fonts() {
-  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Raleway:300,400,400i,700|Open+Sans:400,700,800');
+  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Lato:300,400,400i,700|Roboto:400,700,800');
 }
 
 add_action('wp_enqueue_scripts', 'starter_fonts');
