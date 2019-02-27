@@ -189,4 +189,17 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 
+function ns_google_analytics() { ?>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135263987-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-135263987-1');
+  </script>
+  <?php
+  }
+
+add_action( 'wp_head', 'ns_google_analytics', 10 );
 /* DON'T DELETE THIS CLOSING TAG */ ?>
