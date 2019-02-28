@@ -275,8 +275,11 @@ LAYOUT & GRID STYLES
 		width: 100%;
 		height: auto;
 		border-radius: 50%;
-		//filter: url("#grayscale");
-		margin-left: -1em;
+	}
+
+	h2, .h2 {
+		text-align: center;
+		margin-top: .5em;
 	}
 }
 

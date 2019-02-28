@@ -1899,8 +1899,11 @@ LAYOUT & GRID STYLES
 .who-we-are img {
   width: 100%;
   height: auto;
-  border-radius: 50%;
-  margin-left: -1em; }
+  border-radius: 50%; }
+
+.who-we-are h2, .who-we-are .h2 {
+  text-align: center;
+  margin-top: .5em; }
 
 .philanthropy img {
   width: auto;
