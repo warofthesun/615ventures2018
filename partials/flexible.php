@@ -102,7 +102,7 @@ if( have_rows('front_page_content') ):
             <?php if( have_rows('team_member_repeater') ): ?>
             <ul class="row">
             <?php while ( have_rows('team_member_repeater') ) : the_row(); ?>
-              <li class="col-xs-12 col-md-4">
+              <li class="col-xs-12 col-md-6">
                 <div class="col-xs-12" style="display:flex;flex-direction:column;">
                   <div class="col-xs-8" style="filter: url(#grayscale);align-self:center;">
                     <?php
