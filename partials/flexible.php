@@ -102,32 +102,31 @@ if( have_rows('front_page_content') ):
             <?php if( have_rows('team_member_repeater') ): ?>
             <ul class="row">
             <?php while ( have_rows('team_member_repeater') ) : the_row(); ?>
-              <li class="col-xs-12 col-md-6">
-                <div class="col-xs-12" style="display:flex;flex-direction:column;">
-                  <div class="col-xs-8" style="filter: url(#grayscale);align-self:center;">
-                    <?php
 
-                        $image = get_sub_field('image');
-                        $size = 'square'; // (thumbnail, medium, large, full or custom size)
+                <li class="col-xs-12 <?php if( get_field('team_members_per_row') == 'two' ) { ?>col-md-6<?php } else { ?>col-md-4<?php } ?>">
+                  <div class="col-xs-12" style="display:flex;flex-direction:column;">
+                    <div class="col-xs-8" style="filter: url(#grayscale);align-self:center;">
+                      <?php
 
-                        if( $image ) {
+                          $image = get_sub_field('image');
+                          $size = 'square'; // (thumbnail, medium, large, full or custom size)
 
-                          echo wp_get_attachment_image( $image, $size );
+                          if( $image ) {
 
-                        }
+                            echo wp_get_attachment_image( $image, $size );
 
-                    ?>
+                          }
+
+                      ?>
+                    </div>
+                    <div class="col-xs-12">
+                      <h2><?php the_sub_field('name'); ?></h2>
+                    </div>
                   </div>
+
                   <div class="col-xs-12">
-                    <h2><?php the_sub_field('name'); ?></h2>
+                      <?php the_sub_field('bio'); ?>
                   </div>
-                </div>
-
-                <div class="col-xs-12">
-
-
-                    <?php the_sub_field('bio'); ?>
-                </div>
 
                 </li>
             <?php endwhile; ?>

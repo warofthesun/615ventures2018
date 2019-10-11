@@ -1905,6 +1905,9 @@ LAYOUT & GRID STYLES
   text-align: center;
   margin-top: .5em; }
 
+.who-we-are li {
+  margin-bottom: 2em; }
+
 .philanthropy img {
   width: auto;
   height: 130px;
