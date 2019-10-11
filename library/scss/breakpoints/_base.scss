@@ -285,6 +285,14 @@ LAYOUT & GRID STYLES
 	li {
 		margin-bottom: 2em;
 	}
+
+	.col-md-4 {
+		.col-xs-12 {
+			h2 {
+				font-size: 2.3em;
+			}
+		}
+	}
 }
 
 .philanthropy {

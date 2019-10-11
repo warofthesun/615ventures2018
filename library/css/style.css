@@ -1908,6 +1908,9 @@ LAYOUT & GRID STYLES
 .who-we-are li {
   margin-bottom: 2em; }
 
+.who-we-are .col-md-4 .col-xs-12 h2 {
+  font-size: 2.3em; }
+
 .philanthropy img {
   width: auto;
   height: 130px;
