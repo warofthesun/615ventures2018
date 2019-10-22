@@ -255,15 +255,13 @@ NAVIGATION STYLES
     background: #000;
     margin-top: 0; }
   .nav li {
-    background-color: #e04829;
     -webkit-transition: all .5s;
     transition: all .5s;
+    color: #fff;
     /*
 		plan your menus and drop-downs wisely.
 		*/
     /* showing sub-menus */ }
-    .nav li:hover {
-      background-color: #bb361b; }
     .nav li:first-child {
       border-radius: 5px 0 0 5px; }
     .nav li:last-child {
@@ -275,7 +273,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/ }
       .nav li a:hover, .nav li a:focus {
-        color: #fff;
+        color: rgba(255, 255, 255, 0.5);
         text-decoration: none; }
     .nav li ul.sub-menu,
     .nav li ul.children {

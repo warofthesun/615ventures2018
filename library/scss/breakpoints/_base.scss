@@ -293,6 +293,13 @@ LAYOUT & GRID STYLES
 			}
 		}
 	}
+
+	.team-member {
+		.headshot {
+			filter: url(#grayscale);
+			margin: 0 auto;
+		}
+	}
 }
 
 .philanthropy {
@@ -354,8 +361,15 @@ LAYOUT & GRID STYLES
 
 	img {
 		filter: url("#grayscale");
-		max-height: 150px;
+		max-height: 50px;
+
 		width: auto;
+	}
+
+	.logos {
+		align-items: center;
+		justify-content: space-around;
+		filter: url("#grayscale");
 	}
 }
 

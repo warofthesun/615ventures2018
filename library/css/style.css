@@ -1717,7 +1717,7 @@ img {
 
 .social a, .social a:visited {
   text-decoration: none;
-  background-color: #e04829;
+  background-color: #e63c27;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -1834,7 +1834,7 @@ div.wpcf7-response-output {
     top: 20px;
     right: 15px;
     cursor: pointer;
-    color: #e04829;
+    color: #e63c27;
     font-size: 2em; }
   .modal h1 {
     font-size: 56px;
@@ -1894,7 +1894,7 @@ LAYOUT & GRID STYLES
     margin-bottom: 1em; }
 
 .flexible_section h2 {
-  border-bottom: 1px solid #e04829; }
+  border-bottom: 1px solid #e63c27; }
 
 .who-we-are img {
   width: 100%;
@@ -1910,6 +1910,11 @@ LAYOUT & GRID STYLES
 
 .who-we-are .col-md-4 .col-xs-12 h2 {
   font-size: 2.3em; }
+
+.who-we-are .team-member .headshot {
+  -webkit-filter: url(#grayscale);
+          filter: url(#grayscale);
+  margin: 0 auto; }
 
 .philanthropy img {
   width: auto;
@@ -1957,8 +1962,16 @@ LAYOUT & GRID STYLES
   .partners img {
     -webkit-filter: url("#grayscale");
             filter: url("#grayscale");
-    max-height: 150px;
+    max-height: 50px;
     width: auto; }
+  .partners .logos {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-filter: url("#grayscale");
+            filter: url("#grayscale"); }
 
 .wrap {
   width: 96%;
@@ -1968,12 +1981,12 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #e04829;
+  color: #e63c27;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #bf371c; }
+    color: #c82b17; }
   a:link, a:visited:link {
     /*
 		this highlights links on iPhones/iPads.
@@ -2057,7 +2070,7 @@ and more scalable.
   margin-left: auto;
   margin-right: auto;
   color: #fff;
-  background-color: #e04829;
+  background-color: #e63c27;
   width: 200px;
   padding: .3em; }
   #mobile-nav.show {
@@ -2148,7 +2161,7 @@ GENERAL
       color: #fff;
       font-weight: 100;
       font-size: 4.5em;
-      border-bottom: 1px solid #e04829;
+      border-bottom: 1px solid #e63c27;
       padding-bottom: .5em; }
 
 /*********************
@@ -2690,15 +2703,13 @@ NAVIGATION STYLES
       background: #000;
       margin-top: 0; }
     .nav li {
-      background-color: #e04829;
       -webkit-transition: all .5s;
       transition: all .5s;
+      color: #fff;
       /*
 		plan your menus and drop-downs wisely.
 		*/
       /* showing sub-menus */ }
-      .nav li:hover {
-        background-color: #bb361b; }
       .nav li:first-child {
         border-radius: 5px 0 0 5px; }
       .nav li:last-child {
@@ -2710,7 +2721,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/ }
         .nav li a:hover, .nav li a:focus {
-          color: #fff;
+          color: rgba(255, 255, 255, 0.5);
           text-decoration: none; }
       .nav li ul.sub-menu,
       .nav li ul.children {

@@ -1,5 +1,5 @@
 <div class="partners">
-	<div class="wrap row" style="align-items: center;justify-content: space-around;filter: url(#grayscale);">
+	<div class="wrap row logos">
 		<?php if(have_posts()) : the_post(); ?>
 			<h2><?php the_field('header', 'option'); ?></h2>
 			<?php if( have_rows('trusted_by_repeater', 'option') ): ?>

@@ -104,8 +104,8 @@ if( have_rows('front_page_content') ):
             <?php while ( have_rows('team_member_repeater') ) : the_row(); ?>
 
                 <li class="col-xs-12 <?php if( get_field('team_members_per_row') == 'two' ) { ?>col-md-6<?php } else { ?>col-md-4<?php } ?>">
-                  <div class="col-xs-12" style="display:flex;flex-direction:column;">
-                    <div class="col-xs-8" style="filter: url(#grayscale);align-self:center;">
+                  <div class="col-xs-12 team-member">
+                    <div class="col-xs-8 headshot">
                       <?php
 
                           $image = get_sub_field('image');
@@ -146,7 +146,7 @@ if( have_rows('front_page_content') ):
             <ul class="row">
             <?php while ( have_rows('organization_repeater') ) : the_row(); ?>
               <li class="col-xs-6 col-md-4">
-                <div class="col-xs-12" style="display:flex;flex-direction:row;">
+                <div class="col-xs-12">
                   <div class="col-xs-12">
                     <?php
 
@@ -186,7 +186,7 @@ if( have_rows('front_page_content') ):
               ); ?>
               <ul class="row">
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                  <li class="col-xs-12 col-sm-6" style="display:flex;">
+                  <li class="col-xs-12 col-sm-6">
                     <a href="<?php the_field('article_link'); ?>" target="_blank" class="row">
                     <div class="col-xs-3">
                       <?php the_post_thumbnail('medium-nocrop'); ?>
