@@ -57,7 +57,7 @@ HEADER STYLES
 	#inner-footer {
 		text-align: left;
 	}
-	
+
 .social {
 	.row {
 		justify-content: flex-end;
@@ -80,11 +80,10 @@ NAVIGATION STYLES
 		margin-top:0;
 	}
 	li {
-		background-color: rgba($secondary, 1);
 		transition: all .5s;
+		color: $white;
 
 		&:hover {
-			background-color: darken($secondary, 10%);
 		}
 
 		&:first-child {
@@ -103,7 +102,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				color: $white;
+				color: rgba($white, .5);
 				text-decoration: none;
 			}
 		}

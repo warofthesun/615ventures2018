@@ -293,6 +293,13 @@ LAYOUT & GRID STYLES
 			}
 		}
 	}
+
+	.team-member {
+		.headshot {
+			filter: url(#grayscale);
+			margin: 0 auto;
+		}
+	}
 }
 
 .philanthropy {
