@@ -349,7 +349,7 @@ LAYOUT & GRID STYLES
 }
 
 .partners {
-	background-color: $gray;
+	background-color: $light-gray;
 	margin-top: 2em;
 	padding: 1em;
 
@@ -357,19 +357,22 @@ LAYOUT & GRID STYLES
 		margin: 0;
 		font-size: 1.2em;
 		font-weight: 700;
+		text-align: center;
 	}
 
 	img {
-		filter: url("#grayscale");
-		max-height: 50px;
-
+		max-height: 100px;
 		width: auto;
 	}
 
 	.logos {
 		align-items: center;
 		justify-content: space-around;
-		filter: url("#grayscale");
+	}
+
+	.logo-container {
+		flex-basis: 25%;
+		text-align: center;
 	}
 }
 

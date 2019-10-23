@@ -1,9 +1,10 @@
 <div class="partners">
+	<?php if(have_posts()) : the_post(); ?>
+		<h2><?php the_field('header', 'option'); ?></h2>
 	<div class="wrap row logos">
-		<?php if(have_posts()) : the_post(); ?>
-			<h2><?php the_field('header', 'option'); ?></h2>
 			<?php if( have_rows('trusted_by_repeater', 'option') ): ?>
 				<?php while ( have_rows('trusted_by_repeater', 'option') ) : the_row(); ?>
+					<div class="logo-container">
 					<?php
 
 							$image = get_sub_field('organization_logo');
@@ -11,9 +12,10 @@
 
 							if( $image ) { echo wp_get_attachment_image( $image, $size ); }
 					?>
-				<?php endwhile; endif; ?>
-
+				</div>
+				<?php endwhile; ?>
 	</div>
+	<?php endif; ?>
 </div>
 
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">

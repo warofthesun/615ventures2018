@@ -1952,26 +1952,27 @@ LAYOUT & GRID STYLES
     color: #5c6b80; }
 
 .partners {
-  background-color: #eaedf2;
+  background-color: #f8f9fa;
   margin-top: 2em;
   padding: 1em; }
   .partners h2 {
     margin: 0;
     font-size: 1.2em;
-    font-weight: 700; }
+    font-weight: 700;
+    text-align: center; }
   .partners img {
-    -webkit-filter: url("#grayscale");
-            filter: url("#grayscale");
-    max-height: 50px;
+    max-height: 100px;
     width: auto; }
   .partners .logos {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-filter: url("#grayscale");
-            filter: url("#grayscale"); }
+        justify-content: space-around; }
+  .partners .logo-container {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    text-align: center; }
 
 .wrap {
   width: 96%;
