@@ -1898,23 +1898,30 @@ LAYOUT & GRID STYLES
 
 .who-we-are img {
   width: 100%;
+  max-width: 150px;
   height: auto;
-  border-radius: 50%; }
+  border-radius: 50%;
+  text-align: center; }
 
 .who-we-are h2, .who-we-are .h2 {
   text-align: center;
-  margin-top: .5em; }
+  margin-top: .5em;
+  border-bottom: 0; }
 
 .who-we-are li {
   margin-bottom: 2em; }
 
+.who-we-are_page li {
+  width: 100%; }
+
 .who-we-are .col-md-4 .col-xs-12 h2 {
-  font-size: 2.3em; }
+  font-size: 1.5em; }
 
 .who-we-are .team-member .headshot {
   -webkit-filter: url(#grayscale);
           filter: url(#grayscale);
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
 
 .philanthropy img {
   width: auto;
@@ -2658,6 +2665,9 @@ GENERAL STYLES
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2; }
+  .who-we-are_page h2,
+  .who-we-are_page .h2 {
+    text-align: left; }
   /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -2691,6 +2701,13 @@ HEADER STYLES
   /*********************
 NAVIGATION STYLES
 *********************/
+  .home .nav li a {
+    color: #fff;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+    .home .nav li a:hover {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none; }
   .nav {
     border: 0;
     /* end .menu ul li */
@@ -2704,9 +2721,6 @@ NAVIGATION STYLES
       background: #000;
       margin-top: 0; }
     .nav li {
-      -webkit-transition: all .5s;
-      transition: all .5s;
-      color: #fff;
       /*
 		plan your menus and drop-downs wisely.
 		*/
@@ -2717,12 +2731,15 @@ NAVIGATION STYLES
         border-radius: 0px 5px 5px 0px; }
       .nav li a {
         border-bottom: 0;
+        color: #23337b;
+        -webkit-transition: all .3s;
+        transition: all .3s;
         /*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/ }
         .nav li a:hover, .nav li a:focus {
-          color: rgba(255, 255, 255, 0.5);
+          color: rgba(35, 51, 123, 0.5);
           text-decoration: none; }
       .nav li ul.sub-menu,
       .nav li ul.children {

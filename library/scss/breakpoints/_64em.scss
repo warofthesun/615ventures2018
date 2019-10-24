@@ -23,6 +23,15 @@ body {}
 	order: 2;
 }
 
+.who-we-are {
+	&_page {
+		h2,
+		.h2 {
+			text-align: left;
+		}
+	}
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -67,6 +76,16 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
+.home .nav li a {
+	color: $white;
+	transition: all .3s;
+
+	&:hover {
+		color: rgba($white, 0.5);
+		text-decoration: none;
+	}
+}
+
 .nav {
 	border: 0;
 
@@ -80,8 +99,6 @@ NAVIGATION STYLES
 		margin-top:0;
 	}
 	li {
-		transition: all .5s;
-		color: $white;
 
 		&:hover {
 		}
@@ -96,13 +113,15 @@ NAVIGATION STYLES
 
 		a {
 			border-bottom: 0;
+			color: $primary;
+			transition: all .3s;
 
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				color: rgba($white, .5);
+				color: rgba($primary, .5);
 				text-decoration: none;
 			}
 		}
