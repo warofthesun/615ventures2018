@@ -292,6 +292,11 @@ LAYOUT & GRID STYLES
 	&_page {
 		li {
 			width: 100%;
+
+			h2,
+			.h2 {
+				color: $text-color;
+			}
 		}
 	}
 
@@ -299,15 +304,37 @@ LAYOUT & GRID STYLES
 		.col-xs-12 {
 			h2 {
 				font-size: 1.5em;
+				text-decoration: none;
 			}
 		}
 	}
 
 	.team-member {
-		.headshot {
-			filter: url(#grayscale);
-			margin: 0 auto;
-			text-align: center;
+		a {
+			text-decoration: none;
+
+			.headshot {
+				filter: url(#grayscale);
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			h2,
+			.h2 {
+				color: darken($gray, 20%);
+				transition: all .3s;
+			}
+
+			&:hover {
+				.headshot {
+					filter: none;
+				}
+
+				h2,
+				.h2 {
+					color: $primary;
+				}
+			}
 		}
 	}
 }

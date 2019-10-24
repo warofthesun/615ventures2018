@@ -1913,15 +1913,32 @@ LAYOUT & GRID STYLES
 
 .who-we-are_page li {
   width: 100%; }
+  .who-we-are_page li h2,
+  .who-we-are_page li .h2 {
+    color: #5c6b80; }
 
 .who-we-are .col-md-4 .col-xs-12 h2 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  text-decoration: none; }
 
-.who-we-are .team-member .headshot {
-  -webkit-filter: url(#grayscale);
-          filter: url(#grayscale);
-  margin: 0 auto;
-  text-align: center; }
+.who-we-are .team-member a {
+  text-decoration: none; }
+  .who-we-are .team-member a .headshot {
+    -webkit-filter: url(#grayscale);
+            filter: url(#grayscale);
+    margin: 0 auto;
+    text-align: center; }
+  .who-we-are .team-member a h2,
+  .who-we-are .team-member a .h2 {
+    color: #abb7cb;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+  .who-we-are .team-member a:hover .headshot {
+    -webkit-filter: none;
+            filter: none; }
+  .who-we-are .team-member a:hover h2,
+  .who-we-are .team-member a:hover .h2 {
+    color: #23337b; }
 
 .philanthropy img {
   width: auto;

@@ -105,16 +105,18 @@ if( have_rows('front_page_content') ):
 
                 <li class="col-xs-12 <?php if( get_field('team_members_per_row') == 'two' ) { ?>col-md-6<?php } else { ?>col-md-4<?php } ?>">
                   <div class="col-xs-12 team-member">
-                    <div class="col-xs-8 headshot">
-                      <?php
-                        $image = get_sub_field('image');
-                        $size = 'square'; // (thumbnail, medium, large, full or custom size)
-                        if( $image ) { echo wp_get_attachment_image( $image, $size ); }
-                      ?>
-                    </div>
-                    <div class="col-xs-12">
-                      <h2><?php the_sub_field('name'); ?></h2>
-                    </div>
+                    <a href="<?php echo home_url(); ?>/who-we-are#<?php $page_link = sanitize_title_for_query( get_sub_field('name') ); echo esc_attr( $page_link ); ?>">
+                      <div class="col-xs-8 headshot">
+                        <?php
+                          $image = get_sub_field('image');
+                          $size = 'square'; // (thumbnail, medium, large, full or custom size)
+                          if( $image ) { echo wp_get_attachment_image( $image, $size ); }
+                        ?>
+                      </div>
+                      <div class="col-xs-12">
+                        <h2><?php the_sub_field('name'); ?></h2>
+                      </div>
+                    </a>
                   </div>
                 </li>
             <?php endwhile; ?>
