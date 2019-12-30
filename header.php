@@ -90,7 +90,25 @@
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 
-					<p id="logo" class="h1 col-xs-12 col-sm-2" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/615-ventures-logo.jpg"></a></p>
+					<p id="logo" class="h1 col-xs-12 col-sm-2" itemscope itemtype="http://schema.org/Organization">
+						<a href="<?php echo home_url(); ?>" rel="nofollow">
+							<?php
+								$image = get_field('logo', 'option');
+
+									$url = $image['url'];
+									$title = $image['title'];
+									$alt = $image['alt'];
+									$caption = $image['caption'];
+
+									// thumbnail
+									$size = 'large';
+									$thumb = $image['sizes'][ $size ];
+									$width = $image['sizes'][ $size . '-width' ];
+									$height = $image['sizes'][ $size . '-height' ]; ?>
+
+							<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+						</a>
+					</p>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
