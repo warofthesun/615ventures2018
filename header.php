@@ -98,7 +98,6 @@
 									$url = $image['url'];
 									$title = $image['title'];
 									$alt = $image['alt'];
-									$caption = $image['caption'];
 
 									// thumbnail
 									$size = 'large';
