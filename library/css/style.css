@@ -1717,7 +1717,7 @@ img {
 
 .social a, .social a:visited {
   text-decoration: none;
-  background-color: #dd221d;
+  background-color: #c71d18;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -1834,7 +1834,7 @@ div.wpcf7-response-output {
     top: 20px;
     right: 15px;
     cursor: pointer;
-    color: #dd221d;
+    color: #c71d18;
     font-size: 2em; }
   .modal h1 {
     font-size: 56px;
@@ -1894,7 +1894,7 @@ LAYOUT & GRID STYLES
     margin-bottom: 1em; }
 
 .flexible_section h2 {
-  border-bottom: 1px solid #dd221d; }
+  border-bottom: 1px solid #c71d18; }
 
 .who-we-are img {
   width: 100%;
@@ -2006,12 +2006,12 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #dd221d;
+  color: #c71d18;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #b41c18; }
+    color: #9e1713; }
   a:link, a:visited:link {
     /*
 		this highlights links on iPhones/iPads.
@@ -2096,7 +2096,7 @@ and more scalable.
   margin-left: auto;
   margin-right: auto;
   color: #fff;
-  background-color: #dd221d;
+  background-color: #c71d18;
   width: 200px;
   padding: .3em; }
   #mobile-nav.show {
@@ -2187,7 +2187,7 @@ GENERAL
       color: #fff;
       font-weight: 100;
       font-size: 4.5em;
-      border-bottom: 1px solid #dd221d;
+      border-bottom: 1px solid #c71d18;
       padding-bottom: .5em; }
 
 /*********************
