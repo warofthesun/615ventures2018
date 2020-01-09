@@ -1357,7 +1357,7 @@ and it will create a button dependant on those variables.
 a.primary-btn, input[type="submit"] {
   background-color: #23337b; }
   a.primary-btn:hover, a.primary-btn:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #1e2c6b; }
+    background-color: #2e43a3; }
   a.primary-btn:active, input[type="submit"]:active {
     background-color: #1d2b67; }
 
@@ -1691,6 +1691,22 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+
+#inner-footer a {
+  color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  #inner-footer a:hover {
+    color: rgba(255, 255, 255, 0.7); }
+
+#inner-footer .social a {
+  background-color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #23337b; }
+  #inner-footer .social a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #c71d18; }
 
 #inner-footer {
   -webkit-box-align: center;

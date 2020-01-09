@@ -38,7 +38,26 @@ img {
 }
 
 #inner-footer {
+	a {
+		color: rgba($white, 1);
+		transition: all .3s;
 
+		&:hover {
+			color:  rgba($white, .7);
+		}
+	}
+	.social {
+			a {
+				background-color: rgba($white, 1);
+				transition: all .3s;
+				color: $primary;
+
+				&:hover {
+					background-color:  rgba($white, .7);
+					color: $link-color;
+				}
+		}
+	}
 }
 
 #inner-footer {

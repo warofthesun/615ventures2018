@@ -80,7 +80,7 @@ a.primary-btn, input[type="submit"] {
 
   &:hover,
   &:focus {
-    background-color: darken($primary, 4%);
+    background-color: lighten($primary, 10%);
   } // end hover
 
   &:active {
